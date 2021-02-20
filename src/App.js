@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route } from 'react-router-dom';
 import Home from './components/Home';
 import Header from './components/Header';
@@ -6,6 +6,7 @@ import Pizza from './components/Pizza';
 import Confirmation from './components/Confirmation';
 
 const App = () => {
+  const [order, setOrder] = useState({})
   return (
     <>
       <Header />

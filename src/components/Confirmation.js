@@ -6,7 +6,7 @@ const Confirmation = (props) => {
         <div>
             <h2>Thank You! Please Enjoy Your Pizza.</h2>
             {Object.keys(props.order).map(property => {
-                return <p>{property}: {props.oder[property]}</p>
+                return <p>{property}: {props.order[property]}</p>
             })}
         </div>
     );
